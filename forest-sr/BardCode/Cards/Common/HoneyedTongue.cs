@@ -16,7 +16,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Forest_Sr.BardCode.Cards.Common;
 
 /// <summary>
-/// 巧舌如簧｜Honeyed Tongue
+/// 巧舌如簧｜Honeyed Tongue HONEYED_TONGUE
 /// 效果：获得4点格挡，给予所有敌人1层易伤。
 /// 如果上一张打出的牌是技能牌，改为给予所有敌人1层虚弱。
 /// 升级：格挡+3（4→7），易伤/虚弱层数+1（1→2）
@@ -30,7 +30,7 @@ public sealed class HoneyedTongue : BardCard
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
         new BlockVar(4m, ValueProp.Move),        // 基础格挡值
-        new PowerVar<VulnerablePower>(1m),       // 易伤层数
+        new PowerVar<VulnerablePower>(1m),             // 易伤层数       
         new PowerVar<WeakPower>(1m)              // 虚软弱层
     };
 

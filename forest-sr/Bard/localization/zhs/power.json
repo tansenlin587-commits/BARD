@@ -79,7 +79,11 @@
 
   "FOREST_SR-NEVER_GIVE_UP_POWER.title": "绝不认输",
   "FOREST_SR-NEVER_GIVE_UP_POWER.description": "即将死亡时，改为回复{HealAmount:diff()}点生命，消耗并抽{DrawAmount:diff()}张牌。",
-  "FOREST_SR-NEVER_GIVE_UP_POWER.smartDescription": "即将死亡时，改为回复{HealAmount:diff()}[gold]生命[/gold]，[gold]消耗[/gold]并抽{DrawAmount:diff()}张牌。"
+  "FOREST_SR-NEVER_GIVE_UP_POWER.smartDescription": "即将死亡时，改为回复{HealAmount:diff()}[gold]生命[/gold]，[gold]消耗[/gold]并抽{DrawAmount:diff()}张牌。",
+
+  "FOREST_SR-RHYTHM_STORM_POWER.title": "韵律风暴",
+  "FOREST_SR-RHYTHM_STORM_POWER.description": "当你使用乐曲或释放法术时，获得2层活力，当你获得活力时，对所有敌人造成3点伤害。",
+  "FOREST_SR-RHYTHM_STORM_POWER.smartDescription": "当你使用乐曲或释放法术时，获得2层活力，当你获得活力时，对所有敌人造成3点伤害。"
 
 
 }

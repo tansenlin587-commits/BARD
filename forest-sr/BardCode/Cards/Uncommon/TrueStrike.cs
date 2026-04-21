@@ -24,10 +24,9 @@ public sealed class TrueStrike() : BardCard(0,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    private const string _powerKey = "Power";
 
     //protected override IEnumerable<DynamicVar> CanonicalVars => new global::_003C_003Ez__ReadOnlySingleElementList<DynamicVar>(new DynamicVar("Power", 2m));
-    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new DynamicVar("Power", 2m) };  
+    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new PowerVar<VulnerablePower>(2m) };  
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => new CardKeyword[]{CardKeyword.Exhaust,KeyWord.BardKeyword.Magic}; //消耗,法术
 
@@ -42,14 +41,12 @@ public sealed class TrueStrike() : BardCard(0,
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
 
-        int amount = DynamicVars["Power"].IntValue;
-
         if (cardPlay.Target.HasPower<ArtifactPower>())
         {
             await PowerCmd.Remove<ArtifactPower>(cardPlay.Target);
         }
 
-        await PowerCmd.Apply<VulnerablePower>(cardPlay.Target, amount, Owner.Creature, this);
+        await PowerCmd.Apply<VulnerablePower>(cardPlay.Target, base.DynamicVars.Vulnerable.IntValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

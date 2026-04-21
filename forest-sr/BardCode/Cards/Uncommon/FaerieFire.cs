@@ -20,7 +20,7 @@ namespace Forest_Sr.BardCode.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-        new DynamicVar("Power", 3m)  // 易伤层数
+            new PowerVar<VulnerablePower>(3m)  // 易伤层数
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new CardKeyword[]
@@ -42,17 +42,15 @@ namespace Forest_Sr.BardCode.Cards.Uncommon
         {
             await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
 
-            int amount = DynamicVars["Power"].IntValue;
-
             foreach (Creature enemy in CombatState.HittableEnemies)
             {
-                await PowerCmd.Apply<VulnerablePower>(enemy, amount, Owner.Creature, this);
+                await PowerCmd.Apply<VulnerablePower>(enemy, base.DynamicVars.Vulnerable.IntValue, Owner.Creature, this);
             }
         }
 
         protected override void OnUpgrade()
         {
-            DynamicVars["Power"].UpgradeValueBy(2m);  // 3 → 5 层易伤
+            DynamicVars.Vulnerable.UpgradeValueBy(2m);  // 3 → 5 层易伤
         }
     }
 }

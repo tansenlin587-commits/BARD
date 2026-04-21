@@ -39,27 +39,12 @@ public sealed class NeverGonnaGiveYouUp : BardCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        int recycleCount = DynamicVars.Cards.IntValue;
-
-        // 从消耗牌堆中选择 recycleCount 张牌回收（参考 Hologram）
-        CardPile exhaustPile = PileType.Exhaust.GetPile(base.Owner);
-        if (exhaustPile.Cards.Count > 0)
+        CardSelectorPrefs prefs = new CardSelectorPrefs(base.SelectionScreenPrompt, DynamicVars.Cards.IntValue);
+        CardPile pile = PileType.Exhaust.GetPile(base.Owner);
+        CardModel cardModel = (await CardSelectCmd.FromSimpleGrid(choiceContext, pile.Cards, base.Owner, prefs)).FirstOrDefault();
+        if (cardModel != null)
         {
-            int actualCount = System.Math.Min(recycleCount, exhaustPile.Cards.Count);
-            CardSelectorPrefs prefs = new CardSelectorPrefs(base.SelectionScreenPrompt, actualCount);
-
-            List<CardModel> selectedCards = (await CardSelectCmd.FromSimpleGrid(
-                choiceContext,
-                exhaustPile.Cards,
-                base.Owner,
-                prefs)).ToList();
-
-            foreach (CardModel card in selectedCards)
-            {
-                // 将选中的牌从消耗堆移除，加入手牌
-                await CardPileCmd.RemoveFromCombat(card);
-                await CardPileCmd.Add(card, PileType.Hand);
-            }
+            await CardPileCmd.Add(cardModel, PileType.Hand);
         }
     }
 

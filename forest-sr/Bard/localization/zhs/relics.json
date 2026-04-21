@@ -1,5 +1,9 @@
 {
   "FOREST_SR-BARDIC_INSPIRATION.title": "诗人激励",
   "FOREST_SR-BARDIC_INSPIRATION.description": "回合开始时候，给予所有友方3层活力.",
-  "FOREST_SR-BARDIC_INSPIRATION.flavor": "一把陪伴诗人多年鲁特琴"
+  "FOREST_SR-BARDIC_INSPIRATION.flavor": "一把陪伴诗人多年鲁特琴",
+
+  "FOREST_SR-BETTER_INSPIRATION.title": "诗人激励+",
+  "FOREST_SR-BETTER_INSPIRATION.description": "回合开始时候，给予所有友方6层活力.",
+  "FOREST_SR-BETTER_INSPIRATION.flavor": "一把陪伴诗人多年鲁特琴,又经过了魔力的保养"
 }

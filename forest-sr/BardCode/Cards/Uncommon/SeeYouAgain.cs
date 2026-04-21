@@ -42,26 +42,12 @@ public sealed class SeeYouAgain : BardCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        int recycleCount = DynamicVars.Cards.IntValue;
-
-        // 1. 从弃牌堆中选择 recycleCount 张牌回收（参考 Hologram）
-        CardPile discardPile = PileType.Discard.GetPile(Owner);
-        if (discardPile.Cards.Count > 0)
+        CardSelectorPrefs prefs = new CardSelectorPrefs(base.SelectionScreenPrompt, DynamicVars.Cards.IntValue);
+        CardPile pile = PileType.Discard.GetPile(base.Owner);
+        CardModel cardModel = (await CardSelectCmd.FromSimpleGrid(choiceContext, pile.Cards, base.Owner, prefs)).FirstOrDefault();
+        if (cardModel != null)
         {
-            int actualCount = Math.Min(recycleCount, discardPile.Cards.Count);
-            CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, actualCount);
-
-            List<CardModel> selectedCards = (await CardSelectCmd.FromSimpleGrid(
-                choiceContext,
-                discardPile.Cards,
-                Owner,
-                prefs)).ToList();
-
-            foreach (CardModel card in selectedCards)
-            {
-                // 将选中的牌加入手牌
-                await CardPileCmd.Add(card, PileType.Hand);
-            }
+            await CardPileCmd.Add(cardModel, PileType.Hand);
         }
 
         // 2. 丢弃1张手牌（参考 Hologram 的简洁写法）
