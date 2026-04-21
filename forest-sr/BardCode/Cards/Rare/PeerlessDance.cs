@@ -14,7 +14,7 @@ namespace Forest_Sr.BardCode.Cards.Rare;
 
 /// <summary>
 /// 无双华舞｜PeerlessDance
-/// 效果：选择一张手牌中的攻击牌，本回合它可以额外打出一次。消耗。
+/// 效果：选择一张手牌中的攻击牌，使其获得重放1。消耗。
 /// 升级：移除消耗
 /// </summary>
 public sealed class PeerlessDance : BardCard
@@ -45,8 +45,8 @@ public sealed class PeerlessDance : BardCard
         foreach (CardModel selectedCard in await CardSelectCmd.FromHand(
             choiceContext,
             base.Owner,
-            new CardSelectorPrefs(base.SelectionScreenPrompt, 1),
-            (CardModel c) => c.Type == CardType.Attack,  // 只选择攻击牌
+            new CardSelectorPrefs(base.SelectionScreenPrompt, 1),  
+            (CardModel c) => c.Type == CardType.Attack,  // 只选攻击牌
             this))
         {
             // 增加额外打出次数（参考 Transfigure 的 BaseReplayCount++）

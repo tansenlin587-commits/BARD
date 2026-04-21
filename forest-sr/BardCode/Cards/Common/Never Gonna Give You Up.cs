@@ -17,7 +17,7 @@ namespace Forest_Sr.BardCode.Cards.Rare;
 /// <summary>
 /// Never Gonna Give You Up
 /// 效果：从消耗牌堆回收1张牌。
-/// 升级：回收 1→2 张牌
+/// 升级：回收 1→2 张牌，费用-1（1→0）
 /// </summary>
 public sealed class NeverGonnaGiveYouUp : BardCard
 {
@@ -25,7 +25,6 @@ public sealed class NeverGonnaGiveYouUp : BardCard
     {
         new CardsVar(1)  // 回收数量
     };
-
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => new[]
     {
@@ -40,9 +39,9 @@ public sealed class NeverGonnaGiveYouUp : BardCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        int recycleCount = base.DynamicVars.Cards.IntValue;
+        int recycleCount = DynamicVars.Cards.IntValue;
 
-        // 从消耗牌堆中选择 recycleCount 张牌回收
+        // 从消耗牌堆中选择 recycleCount 张牌回收（参考 Hologram）
         CardPile exhaustPile = PileType.Exhaust.GetPile(base.Owner);
         if (exhaustPile.Cards.Count > 0)
         {
@@ -62,12 +61,11 @@ public sealed class NeverGonnaGiveYouUp : BardCard
                 await CardPileCmd.Add(card, PileType.Hand);
             }
         }
-
     }
 
     protected override void OnUpgrade()
     {
         // 升级：回收 1 → 2 张牌
-        base.DynamicVars.Cards.UpgradeValueBy(+1);
+        DynamicVars.Cards.UpgradeValueBy(1m);
     }
 }

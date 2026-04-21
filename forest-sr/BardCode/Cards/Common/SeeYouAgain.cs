@@ -23,7 +23,7 @@ public sealed class SeeYouAgain : BardCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new CardsVar(3)  // 回收数量
+        new CardsVar(2)  // 回收数量（基础2张）
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new[]
@@ -43,9 +43,9 @@ public sealed class SeeYouAgain : BardCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        int recycleCount = base.DynamicVars.Cards.IntValue;
+        int recycleCount = DynamicVars.Cards.IntValue;
 
-        // 1. 从弃牌堆中选择 recycleCount 张牌回收
+        // 1. 从弃牌堆中选择 recycleCount 张牌回收（参考 Hologram）
         CardPile discardPile = PileType.Discard.GetPile(base.Owner);
         if (discardPile.Cards.Count > 0)
         {
@@ -60,11 +60,12 @@ public sealed class SeeYouAgain : BardCard
 
             foreach (CardModel card in selectedCards)
             {
+                // 将选中的牌加入手牌
                 await CardPileCmd.Add(card, PileType.Hand);
             }
         }
 
-        // 2. 丢弃1张手牌（参考 Prepared）
+        // 2. 丢弃1张手牌（参考 Hologram 的简洁写法）
         await CardCmd.Discard(
             choiceContext,
             await CardSelectCmd.FromHandForDiscard(
@@ -75,12 +76,11 @@ public sealed class SeeYouAgain : BardCard
                 this
             )
         );
-
     }
 
     protected override void OnUpgrade()
     {
         // 升级：回收 2 → 3 张牌
-        base.DynamicVars.Cards.UpgradeValueBy(+1);
+        DynamicVars.Cards.UpgradeValueBy(1m);
     }
 }

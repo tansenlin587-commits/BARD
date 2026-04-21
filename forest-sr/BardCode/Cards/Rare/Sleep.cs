@@ -16,7 +16,7 @@ namespace Forest_Sr.BardCode.Cards.Rare;
 
 /// <summary>
 /// 睡眠术｜Sleep
-/// 效果：使一个血量低于40的敌人陷入睡眠1回合。
+/// 效果：使一个血量低于40的敌人陷入晕眩1回合。
 /// 升级：血量阈值 40→50
 /// </summary>
 public sealed class Sleep : BardCard
@@ -33,7 +33,7 @@ public sealed class Sleep : BardCard
     };
 
     public Sleep()
-        : base(2, CardType.Skill, CardRarity.Rare, TargetType.AnyEnemy)
+        : base(1, CardType.Skill, CardRarity.Rare, TargetType.AnyEnemy)
     {
     }
 
@@ -49,13 +49,8 @@ public sealed class Sleep : BardCard
             return;  // 血量不符合条件，无效
         }
 
-        // 施加1层睡眠（参考乐嘉的 AsleepPower）
-        await PowerCmd.Apply<SleepPower>(
-            cardPlay.Target,
-            1m,  // 睡眠1回合
-            base.Owner.Creature,
-            this
-        );
+
+        await CreatureCmd.Stun(cardPlay.Target);
 
     }
 
