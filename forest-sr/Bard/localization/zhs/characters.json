@@ -1,0 +1,18 @@
+{
+  "FOREST_SR-BARD.aromaPrinciple": "[sine][green]让我看看这里能搜集到什么新故事或者...乐曲？[/green][/sine]",
+  "FOREST_SR-BARD.banter.alive.endTurnPing": "嘿，朋友，我急着去喝一杯呢",
+  "FOREST_SR-BARD.banter.dead.endTurnPing": "……",
+  "FOREST_SR-BARD.cardsModifierDescription": "吟游诗人的卡牌现在会出现在奖励和商店中。",
+  "FOREST_SR-BARD.cardsModifierTitle": "吟游诗人卡牌",
+  "FOREST_SR-BARD.description": "一位来自尖塔之外的吟游诗人。\n随时准备吟诗颂曲，把酒迎欢。\n 能靠乐器施展一些法术",
+  "FOREST_SR-BARD.eventDeathPrevention": "不，我的故事不应就此结束....",
+  "FOREST_SR-BARD.goldMonologue": "[sine]噢耶，看上去我们又可以喝一杯去了[/sine]",
+  "FOREST_SR-BARD.possessiveAdjective": "他的",
+  "FOREST_SR-BARD.pronounObject": "他",
+  "FOREST_SR-BARD.pronounPossessive": "他的",
+  "FOREST_SR-BARD.pronounSubject": "他",
+  "FOREST_SR-BARD.title": "吟游诗人",
+  "FOREST_SR-BARD.titleObject": "吟游诗人",
+  "FOREST_SR-BARD.unlockText": "进行一局游戏来解锁这个角色。"
+
+}

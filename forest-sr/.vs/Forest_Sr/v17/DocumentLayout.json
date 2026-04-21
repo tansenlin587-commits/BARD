@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\BARD\\forest-sr\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bard\\localization\\zhs\\cards.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bard\\localization\\zhs\\cards.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\powers\\nevergiveuppower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\powers\\nevergiveuppower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bard\\localization\\zhs\\power.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bard\\localization\\zhs\\power.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\cards\\rare\\nevergiveup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\cards\\rare\\nevergiveup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\cards\\rare\\haste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\cards\\rare\\haste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\cards\\uncommon\\magicalarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\cards\\uncommon\\magicalarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\cards\\rare\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\cards\\rare\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\cards\\rare\\echoingmelody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\cards\\rare\\echoingmelody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\cards\\rare\\encore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\cards\\rare\\encore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Haste.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\Haste.cs",
+              "RelativeDocumentMoniker": "BardCode\\Cards\\Rare\\Haste.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\Haste.cs",
+              "RelativeToolTip": "BardCode\\Cards\\Rare\\Haste.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:35:11.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NeverGiveUpPower.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Powers\\NeverGiveUpPower.cs",
+              "RelativeDocumentMoniker": "BardCode\\Powers\\NeverGiveUpPower.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Powers\\NeverGiveUpPower.cs",
+              "RelativeToolTip": "BardCode\\Powers\\NeverGiveUpPower.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:34:19.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NeverGiveUp.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\NeverGiveUp.cs",
+              "RelativeDocumentMoniker": "BardCode\\Cards\\Rare\\NeverGiveUp.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\NeverGiveUp.cs",
+              "RelativeToolTip": "BardCode\\Cards\\Rare\\NeverGiveUp.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:33:52.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MagicalArmor.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Uncommon\\MagicalArmor.cs",
+              "RelativeDocumentMoniker": "BardCode\\Cards\\Uncommon\\MagicalArmor.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Uncommon\\MagicalArmor.cs",
+              "RelativeToolTip": "BardCode\\Cards\\Uncommon\\MagicalArmor.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:22:35.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FireBall.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\FireBall.cs",
+              "RelativeDocumentMoniker": "BardCode\\Cards\\Rare\\FireBall.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\FireBall.cs",
+              "RelativeToolTip": "BardCode\\Cards\\Rare\\FireBall.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:17:53.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EchoingMelody.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\EchoingMelody.cs",
+              "RelativeDocumentMoniker": "BardCode\\Cards\\Rare\\EchoingMelody.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\EchoingMelody.cs",
+              "RelativeToolTip": "BardCode\\Cards\\Rare\\EchoingMelody.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T12:03:19.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Encore.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\Encore.cs",
+              "RelativeDocumentMoniker": "BardCode\\Cards\\Rare\\Encore.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\Encore.cs",
+              "RelativeToolTip": "BardCode\\Cards\\Rare\\Encore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:08:25.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cards.json",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\cards.json",
+              "RelativeDocumentMoniker": "Bard\\localization\\zhs\\cards.json",
+              "ToolTip": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\cards.json",
+              "RelativeToolTip": "Bard\\localization\\zhs\\cards.json",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-19T14:36:22.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "power.json",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\power.json",
+              "RelativeDocumentMoniker": "Bard\\localization\\zhs\\power.json",
+              "ToolTip": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\power.json",
+              "RelativeToolTip": "Bard\\localization\\zhs\\power.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAACKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-19T15:49:34.141Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

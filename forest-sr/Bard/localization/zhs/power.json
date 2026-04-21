@@ -1,0 +1,85 @@
+{
+  "FOREST_SR-BLADE_WARD_POWER.description": "本回合有虚弱的敌人对你造成伤害减半",
+  "FOREST_SR-BLADE_WARD_POWER.smartDescription": "有{Amount}层剑刃防护",
+  "FOREST_SR-BLADE_WARD_POWER.title": "剑刃防护",
+
+  "FOREST_SR-HASTE_POWER.description": "回合开始获得2点能量，回合开始抽2张牌，结束时获得2层易伤2层虚弱",
+  "FOREST_SR-HASTE_POWER.smartDescription": "有{Amount}层加速术",
+  "FOREST_SR-HASTE_POWER.title": "加速术",
+
+  "FOREST_SR-HEROISM_POWER.title": "英雄气概",
+  "FOREST_SR-HEROISM_POWER.description": "回合开始时，重新获得 {Block:diff()} 点[gold]格挡[/gold]。",
+
+  "FOREST_SR-DEADLY_PERFORMANCE_POWER.title": "夺命演奏",
+  "FOREST_SR-DEADLY_PERFORMANCE_POWER.description": "每当你释放[gold]魔法[/gold]时，每有 {Amount} 层[gold]夺命演奏[/gold]就对随机敌人造成 {Amount} 点[gold]伤害[/gold]。",
+
+  "FOREST_SR-MELODIC_WARD_POWER.title": "旋律护身",
+  "FOREST_SR-MELODIC_WARD_POWER.description": "每当你释放[gold]魔法[/gold]时，每有 {Amount} 层[gold]旋律护身[/gold]就获得 {Amount} 点[gold]格挡[/gold]。",
+
+  "FOREST_SR-NEXT_SPELL_COST_REDUCTION_POWER.title": "法术共鸣",
+  "FOREST_SR-NEXT_SPELL_COST_REDUCTION_POWER.description": "本回合下一张法术牌费用 -{Amount}。",
+  "FOREST_SR-NEXT_SPELL_COST_REDUCTION_POWER.smartDescription": "下一张法术牌费用减少 {Amount}。",
+
+  "FOREST_SR-VALIANT_PRESENCE_POWER.title": "英勇气势",
+  "FOREST_SR-VALIANT_PRESENCE_POWER.description": "每当你失去[gold]活力[/gold]时，获得 {Amount} 倍层数的[gold]格挡[/gold]。",
+  "FOREST_SR-VALIANT_PRESENCE_POWER.smartDescription": "失去活力时，每层获得 {Amount} 点格挡。",
+
+
+  "FOREST_SR-ALLEGRO_POWER.title": "快板",
+  "FOREST_SR-ALLEGRO_POWER.description": "每回合开始时获得能量。",
+  "FOREST_SR-ALLEGRO_POWER.smartDescription": "每回合开始时获得 {Amount} 点[gold]能量[/gold]。",
+
+  "FOREST_SR-BRISK_BEAT_POWER.title": "轻快节拍",
+  "FOREST_SR-BRISK_BEAT_POWER.description": "每回合开始时抽牌。",
+  "FOREST_SR-BRISK_BEAT_POWER.smartDescription": "每回合开始时抽 {Amount} 张牌。",
+
+  "FOREST_SR-DANCING_YOUTH_POWER.title": "舞动青春",
+  "FOREST_SR-DANCING_YOUTH_POWER.description": "上一回合多种类型时抽牌。",
+  "FOREST_SR-DANCING_YOUTH_POWER.smartDescription": "若上一回合打出至少2种类型的牌，抽 {Amount} 张牌。",
+
+  "FOREST_SR-IMPROVISE_POWER.title": "即兴",
+  "FOREST_SR-IMPROVISE_POWER.description": "每回合随机获得乐曲。",
+  "FOREST_SR-IMPROVISE_POWER.smartDescription": "每回合随机获得 {Amount} 首乐曲。",
+
+  "FOREST_SR-WAR_SONG_POWER.title": "战歌",
+  "FOREST_SR-WAR_SONG_POWER.description": "使用乐曲卡时获得活力。",
+  "FOREST_SR-WAR_SONG_POWER.smartDescription": "每当使用[gold]乐曲卡[/gold]时，获得 {Amount} 层[gold]活力[/gold]。",
+
+  "FOREST_SR-OVERCLOCK_CASTING_POWER.title": "超频施法",
+  "FOREST_SR-OVERCLOCK_CASTING_POWER.description": "法术牌获得消耗和再次打出。",
+  "FOREST_SR-OVERCLOCK_CASTING_POWER.smartDescription": "你的[gold]法术牌[/gold]获得[gold]消耗[/gold]和再次打出。每回合触发 {Amount} 次。",
+
+  "FOREST_SR-MANA_SURGE_POWER.title": "法力充沛",
+  "FOREST_SR-MANA_SURGE_POWER.description": "每回合第一次释放法术时抽牌。",
+  "FOREST_SR-MANA_SURGE_POWER.smartDescription": "每回合第一次释放[gold]法术[/gold]时，抽 {Amount} 张牌。",
+
+  "FOREST_SR-MAGIC_WEAPON_POWER.title": "魔法武器",
+  "FOREST_SR-MAGIC_WEAPON_POWER.description": "非魔法攻击牌获得魔法词条。",
+  "FOREST_SR-MAGIC_WEAPON_POWER.smartDescription": "你的所有非[gold]魔法[/gold]攻击牌获得[gold]魔法[/gold]词条。",
+
+  "FOREST_SR-THUNDERCLAP_POWER.title": "轰雷",
+  "FOREST_SR-THUNDERCLAP_POWER.description": "获得Debuff时受到伤害。",
+  "FOREST_SR-THUNDERCLAP_POWER.smartDescription": "本回合获得[gold]负面效果[/gold]时，受到 {Amount} 点伤害。",
+
+  "FOREST_SR-MIRROR_IMAGE_POWER.title": "镜像",
+  "FOREST_SR-MIRROR_IMAGE_POWER.description": "减少受到的伤害。",
+  "FOREST_SR-MIRROR_IMAGE_POWER.smartDescription": "每次被攻击时，减少 {ReductionPerLayer}×{Amount} 点伤害，然后减少1层。",
+
+  "FOREST_SR-GUARDIAN_RUNE_POWER.title": "守卫刻文",
+  "FOREST_SR-GUARDIAN_RUNE_POWER.description": "失去格挡时反伤。",
+  "FOREST_SR-GUARDIAN_RUNE_POWER.smartDescription": "每当你失去[gold]格挡[/gold]时，对所有敌人造成等量伤害。",
+
+  "FOREST_SR-INSPIRATION_RESONANCE_POWER.title": "灵感共鸣",
+  "FOREST_SR-INSPIRATION_RESONANCE_POWER.description": "打出乐曲牌时回复能量。",
+  "FOREST_SR-INSPIRATION_RESONANCE_POWER.smartDescription": "本回合内，每打出一张[gold]乐曲牌[/gold]，回复 {Amount} 点{Energy:energyIcons(1)}。",
+
+  "FOREST_SR-ECHOING_MELODY_POWER.title": "余音绕梁",
+  "FOREST_SR-ECHOING_MELODY_POWER.description": "每回合开始时，打出上回合最后一张乐曲牌的带消耗复制。",
+  "FOREST_SR-ECHOING_MELODY_POWER.smartDescription": "每回合开始时，打出上回合最后一张[gold]乐曲牌[/gold]的[gold]消耗[/gold]复制。",
+
+  "FOREST_SR-NEVER_GIVE_UP_POWER.title": "绝不认输",
+  "FOREST_SR-NEVER_GIVE_UP_POWER.description": "即将死亡时，改为回复{HealAmount:diff()}点生命，消耗并抽{DrawAmount:diff()}张牌。",
+  "FOREST_SR-NEVER_GIVE_UP_POWER.smartDescription": "即将死亡时，改为回复{HealAmount:diff()}[gold]生命[/gold]，[gold]消耗[/gold]并抽{DrawAmount:diff()}张牌。"
+
+
+}
