@@ -23,7 +23,7 @@ public sealed class Fireball : BardCard
     };
 
     public Fireball()
-        : base(3, CardType.Attack, CardRarity.Common, TargetType.AllEnemies)
+        : base(3, CardType.Attack, CardRarity.Rare, TargetType.AllEnemies)
     {
     }
 

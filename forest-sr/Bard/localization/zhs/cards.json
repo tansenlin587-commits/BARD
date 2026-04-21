@@ -182,7 +182,7 @@
   "FOREST_SR-STREET_PERFORMANCE.title": "街头卖艺",
   "FOREST_SR-STREET_PERFORMANCE.description": "如果本回合演奏过[gold]乐曲[/gold]，获得{BonusGold:diff()}金币。",
   "FOREST_SR-ECHOING_MELODY.title": "余音绕梁",
-  "FOREST_SR-ECHOING_MELODY.description": "给予自己{Weak:diff()}层{虚弱}。每回合开始时，打出上回合最后一张[gold]乐曲牌[/gold]的带消耗复制。",
+  "FOREST_SR-ECHOING_MELODY.description": "给予自己{WeakPower:diff()}层虚弱。每回合开始时，打出上回合最后一张[gold]乐曲牌[/gold]的带消耗复制。",
   "FOREST_SR-FIREBALL.title": "火球术",
   "FOREST_SR-FIREBALL.description": "对所有敌人造成{Damage:diff()}点伤害。",
   "FOREST_SR-MAGICAL_ARMOR.title": "魔法护甲",

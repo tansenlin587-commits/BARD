@@ -17,7 +17,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Common;
-
+/// <summary>
+/// 鸣雷波
+/// </summary>
 public class Thunderwave() : BardCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AllEnemies)

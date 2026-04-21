@@ -15,7 +15,9 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Uncommon;
-
+/// <summary>
+/// 格挡反击
+/// </summary>
 public sealed class ParryRiposte : BardCard
 {
     // 高亮条件：上一张是技能牌 或 敌人意图攻击

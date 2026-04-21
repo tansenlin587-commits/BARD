@@ -14,14 +14,16 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Uncommon;
-
+/// <summary>
+/// 大步奔行
+/// </summary>
 public sealed class Longstrider : BardCard
 {
     public Longstrider() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyPlayer) { }
 
     protected override List<DynamicVar> CanonicalVars => new List<DynamicVar>
     {
-        new PowerVar<DexterityPower>(1m),  // 1层敏捷（每层+1格挡）
+        new PowerVar<DexterityPower>(1m),  // 1层敏捷
         new CardsVar(1)                   // 抽1张牌
     };
 

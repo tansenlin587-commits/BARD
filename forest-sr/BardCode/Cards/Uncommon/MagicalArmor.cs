@@ -11,7 +11,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Common;
-
+/// <summary>
+/// 魔法护甲
+/// </summary>
 public sealed class MagicalArmor : BardCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]

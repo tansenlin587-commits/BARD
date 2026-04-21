@@ -9,7 +9,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Rare;
-
+/// <summary>
+/// 加速术
+/// </summary>
 public sealed class Haste : BardCard
 {
     public Haste() : base(3, CardType.Skill, CardRarity.Rare, TargetType.Self)

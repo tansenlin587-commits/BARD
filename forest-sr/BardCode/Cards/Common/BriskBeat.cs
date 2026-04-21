@@ -26,7 +26,7 @@ public sealed class BriskBeat : BardCard
     };
 
     public BriskBeat()
-        : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.AllAllies)
+        : base(1, CardType.Skill, CardRarity.Common, TargetType.AllAllies)
     {
     }
 

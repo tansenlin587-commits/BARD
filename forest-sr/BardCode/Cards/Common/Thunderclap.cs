@@ -13,7 +13,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Common;
-
+/// <summary>
+/// 鸣雷破
+/// </summary>
 public class Thunderclap() : BardCard(0,
     CardType.Attack, CardRarity.Common,
     TargetType.AllEnemies)

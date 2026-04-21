@@ -20,7 +20,7 @@ namespace Forest_Sr.BardCode.Cards.Other
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-             new PowerVar<StrengthPower>(2m)
+             new PowerVar<StrengthPower>(3m)
         };
 
         public BullStrength()

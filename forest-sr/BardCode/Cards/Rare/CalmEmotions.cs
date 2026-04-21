@@ -32,7 +32,7 @@ public sealed class CalmEmotions : BardCard
 
 
     public CalmEmotions()
-        : base(3, CardType.Skill, CardRarity.Uncommon, TargetType.AnyPlayer)
+        : base(3, CardType.Skill, CardRarity.Rare, TargetType.AnyPlayer)
     {
     }
 

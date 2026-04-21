@@ -19,7 +19,7 @@ namespace Forest_Sr.BardCode.Cards.Other
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-            new DynamicVar("Cards", 1m)
+            new DynamicVar("Cards", 2m)
         };
 
         public FoxCunning()

@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\BARD\\forest-sr\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\cards\\common\\never gonna give you up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\cards\\common\\never gonna give you up.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\cards\\common\\seeyouagain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\cards\\common\\seeyouagain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,19 +39,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Never Gonna Give You Up.cs",
-              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Common\\Never Gonna Give You Up.cs",
-              "RelativeDocumentMoniker": "BardCode\\Cards\\Common\\Never Gonna Give You Up.cs",
-              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Common\\Never Gonna Give You Up.cs",
-              "RelativeToolTip": "BardCode\\Cards\\Common\\Never Gonna Give You Up.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAvwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T06:21:58.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "SeeYouAgain.cs",
               "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Common\\SeeYouAgain.cs",
               "RelativeDocumentMoniker": "BardCode\\Cards\\Common\\SeeYouAgain.cs",
@@ -68,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PeerlessDance.cs",
               "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\PeerlessDance.cs",
               "RelativeDocumentMoniker": "BardCode\\Cards\\Rare\\PeerlessDance.cs",
@@ -76,12 +59,11 @@
               "RelativeToolTip": "BardCode\\Cards\\Rare\\PeerlessDance.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAMwC8AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T06:20:31.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T06:20:31.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CurtainCall.cs",
               "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\CurtainCall.cs",
               "RelativeDocumentMoniker": "BardCode\\Cards\\Rare\\CurtainCall.cs",
@@ -89,12 +71,11 @@
               "RelativeToolTip": "BardCode\\Cards\\Rare\\CurtainCall.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T05:55:41.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T05:55:41.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Encore.cs",
               "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Cards\\Rare\\Encore.cs",
               "RelativeDocumentMoniker": "BardCode\\Cards\\Rare\\Encore.cs",
@@ -102,12 +83,11 @@
               "RelativeToolTip": "BardCode\\Cards\\Rare\\Encore.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAApwB4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T11:08:25.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T11:08:25.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "cards.json",
               "DocumentMoniker": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\cards.json",
               "RelativeDocumentMoniker": "Bard\\localization\\zhs\\cards.json",
@@ -115,12 +95,11 @@
               "RelativeToolTip": "Bard\\localization\\zhs\\cards.json",
               "ViewState": "AgIAAJ8AAAAAAAAAAAAAALIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-19T14:36:22.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T14:36:22.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "power.json",
               "DocumentMoniker": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\power.json",
               "RelativeDocumentMoniker": "Bard\\localization\\zhs\\power.json",

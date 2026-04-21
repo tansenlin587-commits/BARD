@@ -10,7 +10,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Common;
-
+/// <summary>
+/// 灾祸术
+/// </summary>
 public sealed class Bane : BardCard
 {
     private const string _powerKey = "Power";

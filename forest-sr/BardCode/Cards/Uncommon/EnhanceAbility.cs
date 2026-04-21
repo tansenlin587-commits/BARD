@@ -30,9 +30,9 @@ public sealed class EnhanceAbility : BardCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new PowerVar<StrengthPower>(2m),      // 力量层数
-        new PowerVar<DexterityPower>(2m),     // 敏捷层数
-        new DynamicVar("Cards", 1m)           // 抽牌数量
+        new PowerVar<StrengthPower>(3m),      // 力量层数
+        new PowerVar<DexterityPower>(3m),     // 敏捷层数
+        new DynamicVar("Cards", 2m)           // 抽牌数量
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]

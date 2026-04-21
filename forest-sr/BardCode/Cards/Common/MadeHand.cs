@@ -15,7 +15,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Common;
-
+/// <summary>
+/// 法师之手
+/// </summary>
 public sealed class MadeHand() : BardCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
@@ -38,6 +40,8 @@ public sealed class MadeHand() : BardCard(1,
     {
         int retainCount = (int)base.DynamicVars["RetainAmount"].BaseValue;
 
+        await CardPileCmd.Draw(choiceContext, base.DynamicVars.Cards.IntValue, Owner);
+
         CardModel[] selectedCards = (await CardSelectCmd.FromHand(
             prefs: new CardSelectorPrefs(base.SelectionScreenPrompt, retainCount),  // 使用变量控制数量
             context: choiceContext,
@@ -45,8 +49,7 @@ public sealed class MadeHand() : BardCard(1,
             filter: (CardModel c) => !c.Keywords.Contains(CardKeyword.Retain),
             source: this)).ToArray();
 
-
-        await CardPileCmd.Draw(choiceContext, base.DynamicVars.Cards.IntValue, Owner);
+        
 
         foreach (var card in selectedCards)
         {

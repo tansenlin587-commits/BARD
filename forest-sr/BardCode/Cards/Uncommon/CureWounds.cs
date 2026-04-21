@@ -13,7 +13,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Uncommon;
-
+/// <summary>
+/// 治疗术
+/// </summary>
 public sealed class CureWounds : BardCard
 {
 	protected override List<DynamicVar> CanonicalVars => new List<DynamicVar>

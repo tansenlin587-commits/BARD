@@ -35,7 +35,7 @@ public sealed class MagicWeapon : BardCard
     };
 
     public MagicWeapon()
-        : base(2, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+        : base(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
     {
     }
 
@@ -65,6 +65,6 @@ public sealed class MagicWeapon : BardCard
     protected override void OnUpgrade()
     {
         // 升级：力量 1 → 2
-        base.EnergyCost.UpgradeBy(-1);
+        base.DynamicVars[POWER_KEY].UpgradeValueBy(1);
     }
 }

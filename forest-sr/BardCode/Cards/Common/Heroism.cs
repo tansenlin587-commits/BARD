@@ -37,7 +37,7 @@ public sealed class Heroism : BardCard
         HoverTipFactory.Static(StaticHoverTip.Block)
     };
 
-    public Heroism() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyPlayer)
+    public Heroism() : base(1, CardType.Skill, CardRarity.Common, TargetType.AnyPlayer)
     {
     }
 

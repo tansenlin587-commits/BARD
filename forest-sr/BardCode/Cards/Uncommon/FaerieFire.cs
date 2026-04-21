@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//妖火
 namespace Forest_Sr.BardCode.Cards.Uncommon
 {
     public sealed class FaerieFire : BardCard

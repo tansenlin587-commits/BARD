@@ -17,6 +17,9 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 
 namespace Forest_Sr.BardCode.Cards.Uncommon;
 
+/// <summary>
+/// 克敌机先
+/// </summary>
 public sealed class TrueStrike() : BardCard(0,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.AnyEnemy)

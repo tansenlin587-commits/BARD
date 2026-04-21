@@ -17,7 +17,7 @@ namespace Forest_Sr.BardCode.Cards.Other
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-            new PowerVar<DexterityPower>(2m)
+            new PowerVar<DexterityPower>(3m)
         };
 
         public CatGrace()

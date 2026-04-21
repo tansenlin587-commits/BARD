@@ -39,10 +39,10 @@ public class MainFile
 
 		harmony.PatchAll();
 
-        harmony.PatchAll(System.Reflection.Assembly.GetExecutingAssembly());
+		harmony.PatchAll(System.Reflection.Assembly.GetExecutingAssembly());
 
-        Logger.Info("Harmony patches applied!");
+		Logger.Info("Harmony patches applied!");
 
-    }
-    
+	}
+	
 }

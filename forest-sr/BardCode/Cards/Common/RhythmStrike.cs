@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//韵律打击
 namespace Forest_Sr.BardCode.Cards.Common
 {
     public class RhythmStrike() : BardCard(1,
