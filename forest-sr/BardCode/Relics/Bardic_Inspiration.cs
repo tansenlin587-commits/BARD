@@ -23,8 +23,6 @@ public class Bardic_Inspiration : BardRelics
 {
     public override RelicRarity Rarity => RelicRarity.Starter; //稀有度
 
-    // 规范变量：定义一个名为 VigorPower 的动态变量，初始值为 3
-    // 这意味着这张遗物会给予 3 层活力
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new PowerVar<VigorPower>(3m) };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>new IHoverTip[] { HoverTipFactory.FromPower<VigorPower>() };
@@ -32,19 +30,11 @@ public class Bardic_Inspiration : BardRelics
     {
         Flash(); //闪一下
 
-        var combatState = player.Creature.CombatState;
-
-        var allAllies = combatState.Players.Select(p => p.Creature);
-
-        
-        foreach (var ally in combatState.Players.Select(p => p.Creature))
-        {
-            await PowerCmd.Apply<VigorPower>(
-                ally,
+        await PowerCmd.Apply<VigorPower>(
+                player.Creature.CombatState.Allies,
                 base.DynamicVars["VigorPower"].IntValue,
                 player.Creature,
                 null
             );
-        }
     } 
 }
