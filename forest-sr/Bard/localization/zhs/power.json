@@ -63,7 +63,7 @@
 
   "FOREST_SR-MIRROR_IMAGE_POWER.title": "镜像",
   "FOREST_SR-MIRROR_IMAGE_POWER.description": "减少受到的伤害。",
-  "FOREST_SR-MIRROR_IMAGE_POWER.smartDescription": "每次被攻击时，减少 {ReductionPerLayer}×{Amount} 点伤害，然后减少1层。",
+  "FOREST_SR-MIRROR_IMAGE_POWER.smartDescription": "每次被攻击时，减少4*层数的伤害，然后镜像减少1层。",
 
   "FOREST_SR-GUARDIAN_RUNE_POWER.title": "守卫刻文",
   "FOREST_SR-GUARDIAN_RUNE_POWER.description": "失去格挡时反伤。",

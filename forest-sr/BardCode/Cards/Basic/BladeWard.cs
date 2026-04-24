@@ -20,7 +20,6 @@ namespace Forest_Sr.BardCode.Cards.Basic
     {
         private const string _powerVarName = "BladeWard";
         public override bool GainsBlock => true;
-        protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
             new BlockVar(1m, ValueProp.Move),  // 格挡变量，基础值1

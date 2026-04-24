@@ -1,0 +1,47 @@
+using Godot;
+using HarmonyLib;
+using MegaCrit.Sts2.Core.Assets;
+using MegaCrit.Sts2.Core.Logging;
+using MegaCrit.Sts2.Core.Nodes.RestSite;
+using Forest_Sr.BardCode.Extensions;  // 你的路径扩展
+
+namespace Forest_Sr.BardCode.Patch;
+
+[HarmonyPatch(typeof(NRestSiteCharacter), "_Ready")]
+public static class BardRestPatch
+{
+    public static void Postfix(NRestSiteCharacter __instance)
+    {
+        if (__instance.Player.Character is not Character.Bard) return;
+
+        // 移除原有 Spine 动画
+        /*
+         * foreach (Node child in __instance.GetChildren())
+        {
+            if (child.Name == "SpineSprite")
+            {
+                child.QueueFree();
+                break;
+            }
+        }
+        */
+
+        // 加载诗人图片
+        string imagePath = "Visual/Bard.png".ImagePath();
+        var texture = PreloadManager.Cache.GetTexture2D(imagePath);
+        if (texture == null)
+        {
+            Log.Error($"Bard rest image not found: {imagePath}");
+            return;
+        }
+
+        // 添加静态图片
+        var sprite = new Sprite2D
+        {
+            Texture = texture,
+            Scale = new Vector2(0.4f, 0.4f),
+            Position = new Vector2(40, -40)
+        };
+        __instance.AddChild(sprite);
+    }
+}

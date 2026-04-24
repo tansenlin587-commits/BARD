@@ -5,5 +5,15 @@
 
   "FOREST_SR-BETTER_INSPIRATION.title": "诗人激励+",
   "FOREST_SR-BETTER_INSPIRATION.description": "回合开始时候，给予所有友方6层活力.",
-  "FOREST_SR-BETTER_INSPIRATION.flavor": "一把陪伴诗人多年鲁特琴,又经过了魔力的保养"
+  "FOREST_SR-BETTER_INSPIRATION.flavor": "一把陪伴诗人多年鲁特琴,又经过了魔力的保养",
+
+  "FOREST_SR-SNAKE_CHARMER_FLUTE.title": "唤蛇长笛",
+  "FOREST_SR-SNAKE_CHARMER_FLUTE.description": "第一回合将一张蛇咬+加入你的手牌，使其获得[gold]乐曲[/gold].",
+  "FOREST_SR-SNAKE_CHARMER_FLUTE.flavor": "从一个沉默的家伙手上获得的长笛，吹出的音声有能控制蛇的魔力。",
+
+  "FOREST_SR-VIRTUOSA_VIOLIN.title": "2226的小提琴",
+  "FOREST_SR-VIRTUOSA_VIOLIN.description": "当你演奏[gold]乐曲[/gold]时，给与敌方全体2层灾厄",
+  "FOREST_SR-VIRTUOSA_VIOLIN.flavor": "从一个坏女人手上获得的小提琴，用这把小提琴演奏时莫名让人不适...."
+
+
 }

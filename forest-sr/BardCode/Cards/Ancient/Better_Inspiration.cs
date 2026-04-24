@@ -1,4 +1,6 @@
 using BaseLib.Extensions;
+using BaseLib.Utils;
+using Forest_Sr.BardCode.Character;
 using Forest_Sr.BardCode.Powers;
 using Forest_Sr.BardCode.Relics;
 using Godot;
@@ -21,11 +23,12 @@ using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Relics;
 
+[Pool(typeof(BardRelicPool))]
 public class Better_Inspiration : BardRelics
 {
-    public override RelicRarity Rarity => RelicRarity.Ancient; //稀有度
+    public override RelicRarity Rarity => RelicRarity.Starter; //稀有度
 
-    public override RelicModel? GetUpgradeReplacement() => ModelDb.Relic<Bardic_Inspiration>();
+    public override RelicModel? GetUpgradeReplacement() => ModelDb.Relic<Bardic_Inspiration>();  //替换诗人激励
 
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new PowerVar<VigorPower>(6m) };
 

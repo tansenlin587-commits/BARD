@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\BARD\\forest-sr\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\character\\bard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\character\\bard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bard\\localization\\zhs\\characters.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bard\\localization\\zhs\\characters.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\patch\\bardanimationpatch.txt||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\patch\\bardanimationpatch.txt||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\relics\\bardic_inspiration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\relics\\bardic_inspiration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bard\\localization\\zhs\\power.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bard\\localization\\zhs\\power.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bard\\localization\\zhs\\cards.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bard\\localization\\zhs\\cards.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bard\\localization\\zhs\\relics.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bard\\localization\\zhs\\relics.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\relics\\virtuosaviolin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\relics\\virtuosaviolin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|e:\\bard\\forest-sr\\bardcode\\relics\\snakecharmerflute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB1AADA-58D9-4482-9CF6-27CC6BCEA81B}|Forest_Sr.csproj|solutionrelative:bardcode\\relics\\snakecharmerflute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "characters.json",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\characters.json",
+              "RelativeDocumentMoniker": "Bard\\localization\\zhs\\characters.json",
+              "ToolTip": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\characters.json",
+              "RelativeToolTip": "Bard\\localization\\zhs\\characters.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-22T17:30:44.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bard.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Character\\Bard.cs",
+              "RelativeDocumentMoniker": "BardCode\\Character\\Bard.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Character\\Bard.cs",
+              "RelativeToolTip": "BardCode\\Character\\Bard.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAA2wDwAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:27:32.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BardAnimationPatch.txt",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Patch\\BardAnimationPatch.txt",
+              "RelativeDocumentMoniker": "BardCode\\Patch\\BardAnimationPatch.txt",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Patch\\BardAnimationPatch.txt",
+              "RelativeToolTip": "BardCode\\Patch\\BardAnimationPatch.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-22T17:07:28.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VirtuosaViolin.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Relics\\VirtuosaViolin.cs",
+              "RelativeDocumentMoniker": "BardCode\\Relics\\VirtuosaViolin.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Relics\\VirtuosaViolin.cs",
+              "RelativeToolTip": "BardCode\\Relics\\VirtuosaViolin.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwB4AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T09:06:19.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SnakeCharmerFlute.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Relics\\SnakeCharmerFlute.cs",
+              "RelativeDocumentMoniker": "BardCode\\Relics\\SnakeCharmerFlute.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Relics\\SnakeCharmerFlute.cs",
+              "RelativeToolTip": "BardCode\\Relics\\SnakeCharmerFlute.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwDIAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T08:39:10.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bardic_Inspiration.cs",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\BardCode\\Relics\\Bardic_Inspiration.cs",
+              "RelativeDocumentMoniker": "BardCode\\Relics\\Bardic_Inspiration.cs",
+              "ToolTip": "E:\\BARD\\forest-sr\\BardCode\\Relics\\Bardic_Inspiration.cs",
+              "RelativeToolTip": "BardCode\\Relics\\Bardic_Inspiration.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwBwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T16:36:27.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "relics.json",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\relics.json",
+              "RelativeDocumentMoniker": "Bard\\localization\\zhs\\relics.json",
+              "ToolTip": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\relics.json",
+              "RelativeToolTip": "Bard\\localization\\zhs\\relics.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T17:26:37.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "cards.json",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\cards.json",
+              "RelativeDocumentMoniker": "Bard\\localization\\zhs\\cards.json",
+              "ToolTip": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\cards.json",
+              "RelativeToolTip": "Bard\\localization\\zhs\\cards.json",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAJ8AAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-19T14:36:22.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "power.json",
+              "DocumentMoniker": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\power.json",
+              "RelativeDocumentMoniker": "Bard\\localization\\zhs\\power.json",
+              "ToolTip": "E:\\BARD\\forest-sr\\Bard\\localization\\zhs\\power.json",
+              "RelativeToolTip": "Bard\\localization\\zhs\\power.json",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwFQAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-19T15:49:34.141Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,8 +14,6 @@ namespace Forest_Sr.BardCode.Cards.Common;
 
 /// <summary>
 /// 狂怒连击｜RagingFlurry
-/// 效果：造成 3 点伤害 2 次。消耗 3 点活力，额外造成 1 次攻击。
-/// 升级：基础伤害 3 → 4
 /// </summary>
 public sealed class RagingFlurry : BardCard
 {
@@ -46,7 +44,6 @@ public sealed class RagingFlurry : BardCard
 
     protected override void OnUpgrade()
     {
-        // 升级：基础伤害 3 → 4
         base.DynamicVars.Damage.UpgradeValueBy(2m);
     }
 }

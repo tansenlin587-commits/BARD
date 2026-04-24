@@ -32,7 +32,6 @@ public class Thunderclap() : BardCard(0,
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
             .FromCard(this)
             .TargetingAllOpponents(base.CombatState)
-            .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
     }
 

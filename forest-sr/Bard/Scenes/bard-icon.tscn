@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cricd03tfriwb"]
+
+[ext_resource type="Texture2D" uid="uid://l8uvjsetu1rm" path="res://Bard/Images/Visual/character_icon_bard.png" id="1_x6fgg"]
+
+[node name="BardIcon" type="Node"]
+
+[node name="CatIcon" type="Sprite2D" parent="."]
+position = Vector2(92, 90)
+texture = ExtResource("1_x6fgg")

@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://Bard/Images/Visual/Bard.png" id="1_texture"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bard_hitbox"]
+size = Vector2(120, 160)
+
+[node name="BardRestSite" type="Node2D"]
+
+[node name="ControlRoot" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hitbox" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ControlRoot/Hitbox"]
+shape = SubResource("RectangleShape2D_bard_hitbox")
+
+[node name="Bounds" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Visuals" type="Sprite2D" parent="ControlRoot"]
+unique_name_in_owner = true
+position = Vector2(0, -60)
+texture = ExtResource("1_texture")
+scale = Vector2(0.35, 0.35)
+
+[node name="IntentPos" type="Marker2D" parent="ControlRoot"]
+unique_name_in_owner = true
+position = Vector2(0, -90)
+
+[node name="CenterPos" type="Marker2D" parent="ControlRoot"]
+unique_name_in_owner = true
+position = Vector2(0, 0)
+
+[node name="AnimRoot" type="Node2D" parent="ControlRoot"]
+unique_name_in_owner = true

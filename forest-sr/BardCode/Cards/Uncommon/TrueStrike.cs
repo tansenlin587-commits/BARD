@@ -51,6 +51,6 @@ public sealed class TrueStrike() : BardCard(0,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Power"].UpgradeValueBy(1m);
+        DynamicVars.Vulnerable.UpgradeValueBy(1m);
     }
 }

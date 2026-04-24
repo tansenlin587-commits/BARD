@@ -16,13 +16,13 @@ namespace Forest_Sr.BardCode.Cards.Common;
 /// <summary>
 /// 轻快节拍｜BriskBeat
 /// 效果：全体友方获得“轻快节拍”效果，接下来2回合开始时抽1张牌。
-/// 升级：持续时间 2→3 回合
+/// 升级：持续时间 3-4 回合
 /// </summary>
 public sealed class BriskBeat : BardCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new IntVar("Duration", 2m)  // 持续时间（回合数）
+        new IntVar("Duration", 3m)  // 持续时间（回合数）
     };
 
     public BriskBeat()

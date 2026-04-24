@@ -1,5 +1,8 @@
 using BaseLib.Abstracts;
 using BaseLib.Utils;
+using Forest_Sr.BardCode.Cards;
+using Forest_Sr.BardCode.Cards.Basic;
+using Forest_Sr.BardCode.Character;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Combat.History.Entries;
 using MegaCrit.Sts2.Core.Commands;
@@ -10,6 +13,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
@@ -21,24 +25,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Forest_Sr.BardCode.Cards;
-using Forest_Sr.BardCode.Cards.Basic;
-
 
 namespace Forest_Sr.BardCode.Cards.Ancient
 {
+    [Pool(typeof(BardCardPool))]
     internal class PhantasmalKiller : BardCard , ITranscendenceCard
     {
+        public CardModel GetTranscendenceTransformedCard() => ModelDb.Card<ViciousMockery>();   //替换恶言相加
         public PhantasmalKiller() : base(0, CardType.Skill, CardRarity.Ancient, TargetType.AnyEnemy) { }
         protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]{HoverTipFactory.FromPower<WeakPower>()};
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-        new DamageVar(22m, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move),
-        new PowerVar<WeakPower>(1m)
+            new DamageVar(22m, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move),
+            new PowerVar<WeakPower>(1m)
         };
         public override IEnumerable<CardKeyword> CanonicalKeywords => [Forest_Sr.BardCode.Cards.KeyWord.BardKeyword.Magic];
 
-        public CardModel GetTranscendenceTransformedCard() => ModelDb.Card<ViciousMockery>();   //替换恶言相加
+        
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {

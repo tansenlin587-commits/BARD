@@ -1,0 +1,123 @@
+using Godot;
+using HarmonyLib;
+using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Logging;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Nodes.Combat;
+using Forest_Sr.BardCode.Character;
+
+[HarmonyPatch(typeof(NCreature), "SetAnimationTrigger")]
+public static class BardAnimationPatch
+{
+    private const string BARD_VISUAL_NODE = "Bard";      // 诗人视觉节点名称
+    private const string ANIM_SPRITE_NODE = "AnimatedSprite2D";
+
+    private static bool _isConnected = false;
+
+    public static void Postfix(NCreature __instance, string trigger)
+    {
+        // 检查是否为诗人角色
+        if (!IsBardCharacter(__instance)) return;
+
+        Log.Info($"[Bard] AnimationTrigger: {trigger}");
+
+        switch (trigger)
+        {
+            case "Hit":
+                PlayAnim(__instance, "Hit", false);
+                break;
+
+            case "Attack":
+                PlayAnim(__instance, "Attack", false);
+                break;
+
+            case "Cast":
+                PlayAnim(__instance, "Cast", true);
+                break;
+
+            case "Buff":
+                PlayAnim(__instance, "Buff", false);
+                break;
+
+            case "Dead":
+                PlayAnim(__instance, "Dead", false);
+                break;
+
+            default:
+                PlayAnim(__instance, "Idle", false);
+                break;
+        }
+    }
+
+    /// <summary>
+    /// 判断是否为诗人角色
+    /// </summary>
+    private static bool IsBardCharacter(NCreature node)
+    {
+        if (node.Entity == null || !node.Entity.IsPlayer) return false;
+
+        // 通过 ModelId 判断
+        string modelId = node.Entity.ModelId?.ToString() ?? "";
+        if (modelId.Contains("BARD") || modelId.Contains("FOREST_SR-BARD"))
+            return true;
+
+
+        return false;
+    }
+
+    /// <summary>
+    /// 播放动画
+    /// </summary>
+    /// <param name="node">生物节点</param>
+    /// <param name="animName">动画名称</param>
+    /// <param name="fromEnd">是否从末尾开始播放</param>
+    private static void PlayAnim(NCreature node, string animName, bool fromEnd)
+    {
+        // 获取诗人视觉节点
+        var visual = node.GetNodeOrNull<Node2D>(BARD_VISUAL_NODE);
+        if (visual == null)
+        {
+            // 尝试其他可能的节点名称
+            visual = node.GetNodeOrNull<Node2D>("Visuals");
+            if (visual == null) return;
+        }
+
+        // 获取动画播放器
+        var anim = visual.GetNodeOrNull<AnimatedSprite2D>(ANIM_SPRITE_NODE);
+        if (anim == null) return;
+
+        // 播放动画
+        anim.Frame = 0;
+
+        // 检查动画是否存在
+        if (anim.SpriteFrames.HasAnimation(animName))
+        {
+            // Godot 标准播放
+            anim.Play(animName);
+
+            // 如果要从末尾开始，设置最后一帧
+            if (fromEnd && anim.SpriteFrames.GetFrameCount(animName) > 0)
+            {
+                anim.Frame = anim.SpriteFrames.GetFrameCount(animName) - 1;
+            }
+        }
+        else
+        {
+            Log.Warn($"[BardMod] Animation '{animName}' not found for Bard character");
+            return;
+        }
+
+        // 动画结束后回到 Idle（只连接一次，避免重复）
+        if (!_isConnected)
+        {
+            _isConnected = true;
+            anim.Connect("animation_finished", Callable.From(() =>
+            {
+                if (anim.Animation != "Idle" && anim.SpriteFrames.HasAnimation("Idle"))
+                {
+                    anim.Play("Idle");
+                }
+            }));
+        }
+    }
+}

@@ -30,8 +30,8 @@ namespace Forest_Sr.BardCode.Cards.Basic
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-        new DamageVar(4m, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move),
-        new PowerVar<WeakPower>(1m)
+            new DamageVar(4m, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move),
+            new PowerVar<WeakPower>(1m)
         };
         public override IEnumerable<CardKeyword> CanonicalKeywords => [Forest_Sr.BardCode.Cards.KeyWord.BardKeyword.Magic];
 

@@ -22,7 +22,7 @@ public sealed class CourageSong : BardCard
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
         new PowerVar<VigorPower>(3m)            // 活力层数
-    };
+	};
 
     public CourageSong()
         : base(0, CardType.Skill, CardRarity.Common, TargetType.Self)
@@ -36,12 +36,11 @@ public sealed class CourageSong : BardCard
         decimal strengthAmount = base.DynamicVars.Strength.BaseValue;
 
 
-        // 施加 CourageSongPower（自动处理临时力量，回合结束消失）
-        await PowerCmd.Apply<CourageSongPower>(
-            base.Owner.Creature,
-            base.DynamicVars["VigorPower"].IntValue,
-            base.Owner.Creature,
-            this
+        await PowerCmd.Apply<VigorPower>(
+                base.Owner.Creature,
+                base.DynamicVars["VigorPower"].IntValue,
+                base.Owner.Creature,
+                this
         );
     }
 

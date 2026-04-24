@@ -13,7 +13,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Forest_Sr.BardCode.Cards.Rare;
-
+/// <summary>
+/// 隐身
+/// </summary>
 public sealed class Invisbility : BardCard
 {
     protected override List<DynamicVar> CanonicalVars => new List<DynamicVar>

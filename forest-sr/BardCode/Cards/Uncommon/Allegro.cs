@@ -15,13 +15,13 @@ namespace Forest_Sr.BardCode.Cards.Common;
 /// <summary>
 /// 快板｜Allegro
 /// 效果：全体友方获得“快板”效果，接下来2回合开始时获得1点能量。
-/// 升级：持续时间 2→3 回合
+/// 升级：持续时间 3-4 回合
 /// </summary>
 public sealed class Allegro : BardCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new IntVar("Duration", 2m)  // 持续时间（回合数）
+        new IntVar("Duration", 3m)  // 持续时间（回合数）
     };
 
     public Allegro()

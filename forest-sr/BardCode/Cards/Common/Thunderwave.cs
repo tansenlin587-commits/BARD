@@ -45,7 +45,6 @@ public class Thunderwave() : BardCard(1,
             .FromCard(this)
             .WithHitCount(2)
             .TargetingAllOpponents(base.CombatState)
-            .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
 
         await PowerCmd.Apply<CrushUnderPower>(enemies, base.DynamicVars["StrengthLoss"].BaseValue, base.Owner.Creature, this);

@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://msitjxs4i8sh"]
+
+[ext_resource type="Texture2D" uid="uid://bjkqffarsio4a" path="res://Bard/Images/Charui/big_energy.png" id="1_862ce"]
+
+[node name="BardEnergyCounter" type="Node2D"]
+
+[node name="EnergyVfxBack" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Layers" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BigEnergy" type="TextureRect" parent="Layers"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = -49.0
+offset_right = 238.0
+offset_bottom = 23.0
+scale = Vector2(10.87438, 10.87438)
+texture = ExtResource("1_862ce")
+
+[node name="RotationLayers" type="Control" parent="Layers"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnergyVfxFront" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
